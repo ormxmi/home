@@ -6,6 +6,7 @@ var linksLength =linksContainer.childElementCount-1;
 var timerShowProperties;
 var mainLinksProperties = [["https://www.facebook.com","facebook"],["https://www.youtube.com","youtube"],["https://www.instagram.com","instagram"]];
 var elId; // used for determing which link is being saved
+var ticking = document.getElementById("ticking");
 function createLines(){
     var newLine = document.createElement("DIV");
     newLine.setAttribute("class","falling-line");
@@ -20,7 +21,6 @@ function createLines(){
     },2000)
 }
 setInterval(createLines,200);
-var ticking = document.getElementById("ticking");
 setInterval(function(){
     if(ticking.style.color == "rgb(40, 40, 40)"){
         ticking.style.color = "rgb(255,255,255)";
