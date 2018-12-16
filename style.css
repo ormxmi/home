@@ -174,12 +174,12 @@ body{
     cursor: pointer;
 }
 .facebook{
-    background-image: url('img/facebook.png');
+    background-image: url('img/img1.png');
     background-position-y: 15px;
     background-size: contain; 
 }
 .youtube{
-    background-image: url('img/youtube.jpg');
+    background-image: url('img/img2.jpg');
     background-size: cover; 
 }
 .instagram{
