@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="modal-background">
-        <div class="add-new-link">
+        <div class="modal-div add-new-link">
                 <div class="enter-url-div">
                     <label for="enter-url">Enter new url...</label>
                     <div id="enter-url-div-inner" tabindex="0">
@@ -31,12 +31,29 @@
                 </div>
         </div> 
     </div>
+    <div class="modal-background modal-background-2">
+        <div class="modal-div change-color-modal">
+            <p>Pick a color: </p>
+            <div class="change-color-modal-inner-container">
+                <div class="change-color-modal-inner-color" onclick="changeColor('#282828')"></div>
+                <div class="change-color-modal-inner-color" onclick="changeColor('pink')"></div>
+                <div class="change-color-modal-inner-color" onclick="changeColor('#3A589E')"></div>
+                <div class="change-color-modal-inner-color" onclick="changeColor('#ff8080')"></div>
+            </div>
+            <p>Or enter a hex value:</p>
+            <input class="change-color-modal-input" type="text" name="" id="" placeholder="etc. #414d2a">
+            <p class="change-color-modal-error">Not valid hex value.</p>
+        </div>
+    </div>
     <div class="top-header">
         <div class="clock-outer">
             <p class="clock-inner"><span id="clock-hours">10</span><span id="ticking">:</span><span id="clock-minutes">35</span> <span id="amOrPm">am</span></p>
         </div>
         <div class="input-container">
             <input type="text" id="input-header" placeholder="Search Google...">
+        </div>
+        <div class="settings-container" onclick="changeColorModalPopup()">
+            <img src="img/settings.png" alt="">
         </div>
     </div>
     <div class="main-links">
